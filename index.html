@@ -5,146 +5,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-    <nav>
-        <a href="#">Home Page</a> |
-        <a href="#">Recipes</a> |
-        <a href="#">About Us</a>
-    </nav>
-
-    <hr>
-    <div>
-        <h2>Broccoli Salad</h2>
-        <p>A fresh and healthy salad made with broccoli, cherry tomatoes, and a lemon vinaigrette.</p>
-        <img src="/pictures/broccolisalad.jpg" alt="Broccoli Salad" width="300" height="250">
-        <p>For 2-4 people, 10 minutes preparation, 5 minutes cooking</p>
-
-        <div>
-            <table border="1">
-                <tr>
-                    <th colspan="3">Nutritional Value</th>
-                </tr>
-                <tr>
-                    <td>Calories</td>
-                    <td>257</td>
-                </tr>
-                <tr>
-                    <td>Carbohydrates</td>
-                    <td>16.40g</td>
-                </tr>
-                <tr>
-                    <td>Protein</td>
-                    <td>6.70g</td>
-                </tr>
-                <tr>
-                    <td>Fat</td>
-                    <td>19.40g</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <h3>Materials</h3>
+    <h1 class="icon"><i class="fa-solid fa-pizza-slice"></i> Recipe Hub</h1>
+    <div class="contanier">
+        <div class="menu">
             <ul>
-                <li>1 head of broccoli</li>
-                <li>1 cup cherry tomatoes</li>
-                <li>1/4 cup lemon juice</li>
-                <li>1/4 cup olive oil</li>
-                <li>Salt and pepper to taste</li>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="">Menu</a></li>
             </ul>
-            <h3>The Recipe</h3>
-            <ol type="1">
-                <li>Preheat the oven to 200°C (400°F).</li>
-                <li>Wash and chop the broccoli into florets.</li>
-                <li>Place the broccoli on a baking sheet and drizzle with olive oil.</li>
-                <li>Season with salt and pepper.</li>
-                <li>Bake for 10-12 minutes, or until tender.</li>
-                <li>In a small bowl, whisk together lemon juice and olive oil.</li>
-                <li>Combine the roasted broccoli with cherry tomatoes in a large bowl.</li>
-                <li>Pour the dressing over the salad and toss to combine.</li>
-            </ol>
-            <blockquote>
-                <strong>Chef's Note:</strong> Add some sunflower seeds for a delicious crunch!
-            </blockquote>
         </div>
         <hr>
-        <div>
-            <h3>Give Us Your Feedback</h3>
-            <form>
-                <input type="text" placeholder="user name">
-                <br><br>
-                <input type="radio" name="check" value="like">Like
-                <input type="radio" name="check" value="dislike">Dislike
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
-            <!--it will be developed later with css-->
-            <br>
-            For a more detailed recipe<a href="https://www.spendwithpennies.com/broccoli-salad/"
-                target="_blank">here</a>
+        <div class="recipe-card">
+            <h2 class="h2">Broccoli Salad</h2>
+            <p class="p1">Broccoli Salad is a quick salad full of fresh crisp broccoli, dried cranberries, sunflower
+                seeds, and bacon bits. It’s all tossed in a really easy creamy homemade dressing.Since it’s best made
+                ahead of time (and everyone raves about this recipe), it’s a great potluck dish and a favorite addition
+                to a holiday table.</p>
+            <img src="/pictures/broccolisalad.jpg" alt="Broccoli Salad" width="300" height="250">
+
+            <div class="time-servings">
+                <div class="servings">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h4>Servings : </h4>
+                    <p> 8 servings </p>
+                </div>
+
+                <div class="time-section">
+                    <div class="time-row">
+                        <i class="fa-regular fa-clock"></i>
+                        <h4>Prep time:</h4>
+                        <p>20 minutes</p>
+                    </div>
+                    <div class="time-row no-icon">
+                        <h4>Chill time:</h4>
+                        <p>1 hour</p>
+                    </div>
+                    <div class="time-row no-icon">
+                        <h4>Total time:</h4>
+                        <p>1 hour 20 minutes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Nutritional Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Calories</td>
+                            <td>257</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates</td>
+                            <td>16.40g</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>6.70g</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>19.40g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="materials">
+                <h3>Materials</h3>
+                <img src="/pictures/broccolisaladmaterial.jpeg" alt="materials" width="400" height="400">
+                <p>If you have extra veggies you need to use up, you can easily add them to this dish. Zucchini,
+                    cauliflower, celery, or peppers can make great additions!</p>
+                <ul>
+                    <li>1 head of broccoli</li>
+                    <li>Sunflower seeds</li>
+                    <li>Dried cranberries</li>
+                    <li>Onions (red or green work well)</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>Mayonnaise and Apple cider vinegar</li>
+                </ul>
+            </div>
+            <div class="recipe">
+                <h3>The Recipe</h3>
+                <ol type="1">
+                    <li>Preheat the oven to 200°C (400°F).</li>
+                    <li>Wash and chop the broccoli into florets.</li>
+                    <li>Place the broccoli on a baking sheet and drizzle with olive oil.</li>
+                    <li>Season with salt and pepper.</li>
+                    <li>Bake for 10-12 minutes, or until tender.</li>
+                    <li>In a small bowl, whisk together lemon juice and olive oil.</li>
+                    <li>Combine the roasted broccoli with cherry tomatoes in a large bowl.</li>
+                    <li>Pour the dressing over the salad and toss to combine.</li>
+                </ol>
+                <div class="chefsnote">
+                    <p id="chefs">Chef's Note:</p>
+                    <p id="note">Add some sunflower seeds for a delicious crunch!</p>
+                </div>
+                <div class="link">
+                    For a more detailed recipe <a href="https://www.spendwithpennies.com/broccoli-salad/"
+                        target="_blank">here</a>
+                </div>
+
+            </div>
+
+            <div class="feedback1">
+                <h3>Give Us Your Feedback</h3>
+                <form>
+                    <p id="user">user name:</p>
+                    <input type="text" placeholder="user name">
+
+                    <p id="l-or-dl">Did you like the recipe?</p>
+                    <input type="radio" name="check" value="like">Like
+                    <input type="radio" name="check" value="dislike">Dislike
+
+                    <p id="area">You can write your suggestions or complaints:</p>
+                    <textarea name="text" id="text1" cols="30" rows="20"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="recipe-card">
+            <h2 class="h5">Baked Potatoes</h2>
+            <p class="p1">If you've been searching for the perfect baked potato that everyone will love, your search
+                ends here! This baked potato recipe yields a baked potato that's crispy on the outside, but fluffy on
+                the inside — just like the perfect baked potato should be. Plus, it's made with just a few simple
+                ingredients that you probably already have on hand. What could be any better than that? Be sure to save
+                this recipe because you'll want it for every potluck, barbecue, and even weeknight dinner!</p>
+            <img src="/pictures/bakedpotatoes.jpg" alt="Baked Potatoes" width="300" height="250">
+
+            <div class="time-servings">
+                <div class="servings">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h4>Servings : </h4>
+                    <p> 3 servings </p>
+                </div>
+
+                <div class="time-section">
+                    <div class="time-row">
+                        <i class="fa-regular fa-clock"></i>
+                        <h4>Prep time:</h4>
+                        <p>15 minutes</p>
+                    </div>
+                    <div class="time-row no-icon">
+                        <h4>Cook time:</h4>
+                        <p>1 hour 30 mins</p>
+                    </div>
+                    <div class="time-row no-icon">
+                        <h4>Total time:</h4>
+                        <p>1 hour 45 minutes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="table1">
+                <table>
+                    <tr>
+                        <th colspan="3">Nutritional Value</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>419</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohydrates</td>
+                        <td>38g</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>13g</td>
+                    </tr>
+                    <tr>
+                        <td>Fat</td>
+                        <td>25g</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="materials">
+                <h3>Materials</h3>
+                <img src="/pictures/bakedpotatoesmaterials.jpg" alt="materials" width="400" height="400">
+                <ul>
+                    <li>3 medium potatoes</li>
+                    <li>2 teaspoons olive oil</li>
+                    <li>1 teaspoon thyme</li>
+                    <li>1 teaspoon salt</li>
+                    <li>4 teaspoons butter</li>
+                    <li>2 pinches freshly ground black pepper</li>
+                    <li>½ cup shredded Cheddar cheese</li>
+                </ul>
+            </div>
+            <div class="recipe">
+                <h3>The Recipe</h3>
+                <ol>
+                    <li>Preheat the oven to 300 degrees F (150 degrees C). Scrub the potato, and pierce the skin several
+                        times with a knife or fork. Rub the skin with olive oil, then with salt.</li>
+                    <li>Place the potato in the preheated oven, and bake until slightly soft and golden brown, about 90
+                        minutes. You'll know the baked potato is done when you can stick a fork in the potato and it
+                        easily pierces through the skin. If the potato is still hard in the middle, keep baking it for a
+                        little longer.</li>
+                    <li>lice the potato down the center, and serve with butter and black pepper. Sprinkle shredded
+                        Cheddar cheese over the top, if desired.</li>
+                </ol>
+            </div>
+            <div class="link">
+                For a more detailed recipe <a href="https://www.spendwithpennies.com/twice-baked-potatoes/"
+                    target="_blank">here</a>
+            </div>
+            <div class="feedback1">
+                <h3>Give Us Your Feedback</h3>
+                <form>
+                    <p id="user">user name: </p>
+                    <input type="text" placeholder="User Name">
+  
+                    <p id="l-or-dl">Did you like the recipe?</p>
+                    <input type="radio" name="check" value="like">Like
+                    <input type="radio" name="check" value="dislike">Dislike
+
+                    <p id="area">You can write your suggestions or complaints:</p>
+                    <textarea name="text" id="text1" cols="30" rows="20"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
-    <hr>
-    <div>
-        <h2>Baked Potatoes</h2>
-        <p>Crispy and healthy oven-baked potato wedges.</p>
-        <img src="/pictures/bakedpotatoes.jpg" alt="Baked Potatoes" width="300" height="250">
-        <p>For 2-4 people, 15 minutes preparation, 25 minutes cooking</p>
-        <table border="1">
-            <tr>
-                <th colspan="3">Nutritional Value</th>
-            </tr>
-            <tr>
-                <td>Calories</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <td>Carbohydrates</td>
-                <td>30g</td>
-            </tr>
-            <tr>
-                <td>Protein</td>
-                <td>3g</td>
-            </tr>
-            <tr>
-                <td>Fat</td>
-                <td>5g</td>
-            </tr>
-        </table>
-        <h3>Materials</h3>
-        <ul>
-            <li>3 medium potatoes</li>
-            <li>2 tablespoons olive oil</li>
-            <li>1 teaspoon thyme</li>
-        </ul>
-
-        <h3>The Recipe</h3>
-        <ol>
-            <li>Slice the potatoes into wedges.</li>
-            <li>Mix with olive oil and spices.</li>
-            <li>Bake at 200°C for 25 minutes.</li>
-        </ol>
-    </div>
-
-    <hr>
-
-    <div>
-        <h3>Give Us Your Feedback</h3>
-        <form>
-            <input type="text" placeholder="User Name">
-            <br><br>
-            <label><input type="radio" name="check" value="like"> Like</label>
-            <label><input type="radio" name="check" value="dislike"> Dislike</label>
-            <br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <footer>
-        <p>For more detailed recipes, click <a href="https://www.loveandlemons.com/baked-potato/"
-                target="_blank">here</a></p>
-    </footer>
     </div>
 
 </body>

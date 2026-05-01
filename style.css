@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    background-color: #f8f5f0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.recipe-card {
+    background: #ffffff;
+    border-radius: 15px; 
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 700px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+}
+.recipe-card img {
+    border-radius: 12px;
+    width: 100%; 
+    height: auto;
+    margin: 20px 0;
+}
+.contanier{
+    margin: auto;
+    max-width: 800px;
+}
+.h2 , .h5{
+    color: #7b284f;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+}
+
+.p1{
+    position:relative;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-break: 22px;
+}
+
+.icon{
+    color: #7b284f;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+}
+
+.menu{
+    background-color:#7b284f;
+    margin: 20px auto;
+    padding: 10px 0;
+    text-align: center;
+    border-radius:50px;
+}
+.menu ul li{
+        display: inline-block;
+        width: 100px;
+        padding: 4px;
+        margin-left: 20px;
+        transition: 0.5s;
+}
+
+.menu ul li a{
+        text-decoration: none;
+        color:white;
+        font-weight: 500;
+        padding: 8px 16px;
+        transition: all 0.3s ease;
+}
+.menu ul li a:hover{ 
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+}
+
+
+.time-servings {
+    padding: 15px;
+    font-family: sans-serif;
+}
+.servings, .time-row {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    margin-bottom: 8px;
+}
+.servings h4, .servings p,
+.time-row h4, .time-row p {
+    margin: 0; 
+    line-height: 1.2;
+}
+.icon-fixed {
+    width: 20px;
+    text-align: center;
+    color: #7b284f; 
+}
+.no-icon {
+    padding-left: 32px; 
+}
+.servings h4, .time-row h4 {
+    font-weight: bold;
+    color: #333;
+    min-width: 100px; 
+}
+.servings p, .time-row p {
+    color: #666;
+}
+.table1{
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+}
+.table1 th{
+    text-align: left;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    color: #7b284f;
+    border-bottom: 2px solid #7b284f;
+}
+.table1 td{
+    padding: 12px 0;
+    border-bottom: 1px solid #eee; 
+    color: #444;
+}
+.table1 tr:last-child td {
+    border-bottom: none;
+}
+.table1 .value {
+    text-align: right;
+    font-weight: bold;
+    color: #7b284f;
+}
+.table1:hover td {
+    background-color: #f9f9f9;
+}
+.materials h3{
+    font-size: 25px;
+    color: #7b284f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    border-bottom: 2px solid #7b284f;
+}
+.materials ul{
+    list-style: none;
+    width: 40%;
+    padding-left: 0px;
+}
+.materials ul li{
+    padding: 6px;
+    margin-left: 0px;
+}
+.materials ul li::before {
+    content: "✓ ";
+    margin-right: 6px;
+    font-weight: bold;
+    color: #7b284f;
+}
+.materials p{
+    font-family: sans-serif;
+    position: relative;
+    font-size: 16px;
+}
+.recipe h3{
+    font-size: 25px;
+    color: #7b284f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    border-bottom: 2px solid #7b284f;
+}
+.recipe ol{
+    width: 60%;
+    padding-left: 10px;
+}
+.recipe ol li{
+    padding: 6px;
+    font-family: sans-serif;
+    margin-bottom: 1px;
+}
+#chefs{
+    color: #7b284f;
+    font-family: sans-serif;
+    display: inline-block;
+}
+#note{
+    font-family: sans-serif;
+    display: inline-block;
+}
+.link{
+     font-family: sans-serif;
+     font-size: 15px;
+}
+.link::before{
+    content: "★ "; 
+    color: #880d1e ;
+}
+.feedback1{
+    font-family: sans-serif;
+}
+.feedback1 h3{
+    border-bottom: 2px solid #7b284f;
+    color: #7b284f;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#user {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+#l-or-dl{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+#area{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+#text1{
+    background-color: #9e3767;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"], textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 10px 0;
+        font-family: inherit;
+    }
+input[type="submit"] {
+        background-color: #7b284f;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+}
+input[type="submit"]:hover {
+        background-color: #5a1d3a;
+}
+
